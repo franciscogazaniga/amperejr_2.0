@@ -1,0 +1,2629 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    -webkit-text-size-adjust: none;
+    background-color: white;
+}
+
+main, section {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: white;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*HEADER*/
+
+header.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    width: 100%;
+    height: 68px;
+    border-radius: 0 0 30px 30px;
+    background-color: white;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0 0 20px -15px black;
+    /*border-bottom: 1px solid rgba(70,70,70,0.1);*/
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+ul.menu-options {
+    display: flex;
+    list-style: none;
+}
+
+ul.menu-options > li > a {
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #707070;
+    font-size: 18px;
+    font-family: 'Lato';
+    transition: all 0.3s ease 0s;
+}
+
+ul.menu-options > li > a:hover {
+    color: #FFAD82;
+}
+
+.connect-icon img {
+    width: 30px;
+}
+
+.reuniao img {
+    width: 55px;
+}
+
+
+/*
+.container-logo a {
+    width: 218px;
+    display: flex;
+}
+
+.logo {
+    height: 96px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../imagens/logo-preto.svg);
+    background-size: 230px 100px;
+}
+*/
+/*PRINCIPAL*/
+
+main.principal {
+    display: flex;
+    background-image: linear-gradient(#397CD6, #0ACFFA);
+    position: relative;
+}
+
+.background {
+    width: 100%;
+    background-image: url('../imagens/background-principal.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.principal-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    top: 25%;
+    left: 10%;
+    /*padding: 0 50% 0 10%;*/
+}
+
+.principal-logo {
+    height: 118px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../imagens/logo-branco.svg);
+}
+
+.principal-text {
+    color: white;
+    font-size: 19px;
+    font-family: 'Lato';
+    padding: 30px 10px 30px 30px;
+}
+
+.button {
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px 10px;
+    margin-left: 30px;
+    width: 260px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    color: #707070;
+    box-shadow: 5px 3px 0 0 #FFAD82;
+    transition: all 0.2s ease 0s;
+}
+
+.button:hover {
+    /*animation: button-animation 0.2s;*/
+    margin: 2.5px 31.5px;
+    box-shadow: 0 0 0 0 #FFAD82;;
+}
+
+.burger {
+    display: none;
+}
+
+/*@keyframes button-animation{
+    0% {
+        padding: 10px 10px;
+        box-shadow: 5px 3px 0 0 #FFAD82;
+    }
+
+    50% {
+        box-shadow: none;
+    }
+
+    100% {
+        margin: 2.5px 31.5px;
+        box-shadow: none;
+    }
+}*/
+
+/*SOBRE NÓS*/
+
+section.about {
+    background-color: #0ACFFA;
+    background-image: url('../imagens/bubbles-about-background.svg');
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+}
+
+.image-members {
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../imagens/2019-2.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.text-members {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font: 20px/1.7 'Lato';
+    color: white;
+    font-family: 'Lato';
+    text-align: justify;
+    justify-content: center;
+}
+
+.text-members p {
+    margin-bottom: 50px;
+}
+
+.text-members .button {
+    position: absolute;
+    width: 210px;
+}
+
+.button-about-home {
+    margin-bottom: 50px;
+}
+
+/*NOSSOS SERVIÇOS*/
+
+main.services {
+    background-color: #02E3D0;
+    background-image: url('../imagens/bubbles-service-background.svg');
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+
+.title-align {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+}
+
+.service-circle {
+    background-color: white;
+    display: flex;
+    width: 208px;
+    height: 208px;
+    border-radius: 100%;
+    margin: 0 100px;
+    position: relative;
+    /*box-shadow: 0 10px 0 0 #FFAD82;*/
+    border-bottom: 10px solid #FFAD82;
+    /*transition-duration: 1s;*/
+    transition: all 0.3s ease 0s;
+}
+
+.service-circle:hover {
+    border-bottom: none;
+   /* animation: size-animation 2s;
+    animation-fill-mode: forwards;*/
+}
+
+.estudo {
+    display: inline-block;
+    position: absolute;
+    background-image: url('../imagens/icone-estudo.svg');
+    background-size: 126px 126px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 126px;
+    height: 126px;
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+
+.projeto {
+    display: inline-block;
+    position: absolute;
+    background-image: url('../imagens/icone-projeto.svg');
+    background-size: 126px 126px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 126px;
+    height: 126px;
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+
+.eficiencia {
+    display: inline-block;
+    position: absolute;
+    background-image: url('../imagens/icone-eficiencia.svg');
+    background-size: 126px 126px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 126px;
+    height: 126px;
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+
+.service-title {
+    padding: 20px 0 0 0;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: 'Lato';
+}
+
+@keyframes size-animation {
+    0% {
+        flex-direction: row;
+        width: 208px;
+        height: 208px;
+    }
+
+    100% {
+        flex-direction: column;
+        width: 170px;
+        height: 170px;
+    }
+}
+
+/*AGENDE UMA REUNIÃO*/
+
+section.meeting {
+    height: 100%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.black {
+    color: black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin-top: 200px;
+}
+
+.title-form {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    font-size: 13pt;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+label {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.content-title {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    font-family: 'Lato';
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    appearance: none;
+    background: transparent;
+}
+
+.title-form input:focus + .label-title .content-title, 
+.title-form input:valid + .label-title .content-title {
+    transform: translateY(-150%);
+    font-size: 14px;
+}
+
+.title-form input:focus + .label-title::after,
+.title-form input:valid + .label-title::after {
+    transform: translateX(0%);
+}
+
+.hour-form select:focus + .label-hour .content-hour, 
+.hour-form select:valid + .label-hour .content-hour {
+    transform: translateY(-150%);
+    font-size: 14px;
+}
+
+.find-form select:focus + .label-find .content-find, 
+.find-form select:valid + .label-find .content-find {
+    transform: translateY(-150%);
+    font-size: 14px;
+}
+
+.arrow {
+    position: absolute;
+    right: 10px;
+    bottom: 30%;
+    display: inline-block;
+    background-image: url(../imagens/icone-seta.svg);
+    background-size: 8px 8px;
+    height: 8px;
+    width: 8px;
+    pointer-events: none;
+}
+
+.message-form textarea {
+    width: 100%;
+    height: 190px;
+    color: #12144d;
+    outline: none;
+    border: 1px solid #12144d;
+    margin-top: 20px;
+    padding-left: 3%;
+    padding-top: 2%;
+    resize: none;
+    border-radius: 15px;
+    font: 15px 'Lato';
+}
+
+.form .button {
+    position: relative;
+    left: 5%;
+    margin-top: 4%;
+    transform: translateX(-50%);
+    margin-bottom: 5%;
+    height: auto;
+    border: 1px solid;
+    cursor: pointer;
+    width: 115px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/*CONTATO*/
+
+section.contact {
+    background-image: url('../imagens/bubbles-contact-background.svg');
+    background-repeat: no-repeat;
+    background-size: 90% 90%;
+    background-position: center;
+    position: relative;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #0ACFFA;
+    margin: none;
+}
+
+.contact-area form {
+    margin-top: 0;
+}
+
+.contact-area .title-align {
+    top: 0;
+    left: 0;
+    position: unset;
+}
+
+.contact-area {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input-contact {
+    background-color: transparent;
+    color: white;
+}
+
+section.infos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.infos-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infos-area .title-align {
+    position: unset;
+    top: unset;
+    left: unset;
+}
+
+.infos-area .title-align .title {
+    color: #707070;
+    margin-bottom: 20px;
+}
+
+.infos-area p {
+    font-family: 'Lato';
+}
+
+.infos-area ul li {
+    list-style: none;
+}
+
+.infos-area ul li a {
+    color: black;
+    font: 12pt "Lato";
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.infos-area ul li a:hover {
+    color: #f7945f;
+}
+
+/*CONNECT PÁGINA PRINCIPAL*/
+
+.connect {
+    float: left;
+    display: flex;
+}
+
+.connect header .title {
+    color: #C8191E;
+    padding-top: 50px;
+}
+
+.logo-connect {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+.button-connect-home {
+    margin-bottom: 50px;
+}
+
+.logo-connect .button {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px 10px;
+    margin-left: 30px;
+    width: 180px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    color: #707070;
+    box-shadow: 5px 3px 0 0 #668eec;
+    border: 1px solid #707070;
+    transition: all 0.2s ease 0s;
+}
+
+.logo-connect .button:hover {
+    margin: 2.5px 31.5px;
+    box-shadow: 0 0 0 0 #668eec;
+}
+
+
+.logo-connect img {
+    width: 500px;
+    margin: 15% auto;
+    margin-top: 25%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.palestras {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.palestras ul {
+    padding-right: 200px;
+}
+
+.palestras ul li {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.palestra-icon img {
+    width: 180px;
+}
+
+.palestra-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.palestra-text p {
+    font: 18px/1.7 'Lato';
+    font-weight: 700;
+}
+
+.palestras ul li .palestra-blue {
+    color: #668eec;
+}
+
+.palestras ul li .palestra-green {
+    color: #32A041;
+}
+
+.palestras ul li .palestra-red {
+    color: #C8191E;
+}
+
+/*FOOTER*/
+
+.clear {
+    clear: both;
+}
+
+footer {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: #434343;
+    position: relative;
+}
+
+#secao-footer {
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+#logo-footer > .logo-footer > img {
+    width: 345px;
+    transition: all 0.3s ease 0s;
+}
+
+#logo-footer > .logo-footer > img:hover {
+    opacity: 0.7;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+footer p {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    color: white;
+    text-align: justify;
+    font: 12pt "Lato";
+}
+
+footer>.container>#footer-bar>#logo-footer-container {
+    margin-top: 4%;
+    margin-right: 0;
+    margin-left: 0;
+    justify-content: center;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#icones {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.instagram {
+    display: inline-block;
+    background-image: url(../imagens/icone-instagram.svg);
+    height: 34px;
+    width: 34px;
+    background-size: 34px 34px;
+    top: 23%;
+    transition: all 0.3s ease 0s;
+}
+
+.instagram:hover {
+    opacity: 0.7;
+}
+
+.facebook {
+    display: inline-block;
+    background-image: url(../imagens/icone-facebook.svg);
+    background-size: 20px 34px;
+    height: 34px;
+    width: 20px;
+    top: 23%;
+    transition: all 0.3s ease 0s;
+}
+
+.facebook:hover {
+    opacity: 0.7;
+}
+
+.linkedin {
+    display: inline-block;
+    background-image: url(../imagens/icone-linkedin.svg);
+    height: 34px;
+    width: 36px;
+    top: 23%;
+    transition: all 0.3s ease 0s;
+}
+
+.linkedin:hover {
+    opacity: 0.7;
+}
+
+.secao-links-footer {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.links-footer {
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.center-links-footer {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.margin-links {
+    display: inline-table;
+}
+
+.links-footer > h4 {
+    padding: 15px 0 3px 0;
+    color: white;
+    font: bold 14pt "Lato";
+    text-transform: uppercase;
+}
+
+.line {
+    width: 50px;
+    height: 3px;
+    margin-bottom: 10px;
+    background-color: #e38a3a;
+    display: inline-block;
+}
+
+.links-footer > ul{
+    list-style: none;
+    padding-right: 50px;
+}
+
+.links-footer > ul > li {
+    margin: 5px 0;
+}
+
+.links-footer > ul > li > a {
+    color: white;
+    font: 15px "Lato";
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.links-footer > ul > li > a:hover {
+    opacity: 75%;
+}
+
+.links-footer:nth-child(3) > ul > li > a:hover {
+    opacity: unset;
+}
+
+.links-footer > ul > li > p {
+    color: white;
+    font: 15px "Lato";
+    letter-spacing: 0.5px;
+}
+
+.links-footer > #facebook-page {
+    margin-top: 3%;
+	text-align-last: center;
+    flex: 0 0 25%;
+}
+
+.copyright {
+    width: 100%;
+    height: 35px;
+    background-color: #616161;
+    position: absolute;
+    bottom: 0;
+}
+
+.text-1 {
+    color: white;
+    font: 11pt "Lato";
+    display: inline;
+    position: absolute;
+    left: 4%;
+    top: 20%;
+}
+
+.text-2 {
+    color: white;
+    font: 11pt "Lato";
+    display: inline;
+    position: absolute;
+    right: 4%;
+    top: 20%;
+}
+
+.text-2 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*PROCESSO SELETIVO PÁGINA*/
+
+.processo-seletivo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.processo-seletivo .title-align h2 {
+    color: #616161;
+}
+
+.processo-seletivo .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto-paginas-secundarias {
+    font: 17pt 'Lato';
+    color: black;
+    text-align: center;
+    padding: 0 70px;
+}
+
+#texto-paginas-secundarias h2 {
+    color: #e38a3a;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#texto-paginas-secundarias .selecionados-title {
+    color: #616161;
+}
+
+.icone-seletivo {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border: 5px solid #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone-seletivo img {
+    height: 150px;
+}
+
+.container-seletivo {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-seletivo p {
+    margin: 3% 0;
+}
+
+.button-seletivo {
+    margin-bottom: 20px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 5px solid #FFAD82;
+    border-top: 1px solid #FFAD82;
+    border-left: 1px solid #FFAD82;
+    border-right: 1px solid #FFAD82;
+    border-radius: 30px;
+    width: 300px;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    color: #707070;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    padding-top: 0;
+    height: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.button-seletivo:hover {
+    border-bottom: 1px solid #FFAD82;
+}
+
+/*SOBRE NÓS PÁGINA*/
+
+#triade-conteudo {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(45deg, #e38a3a, #FAAC34);
+    box-shadow: 0 0 5px #e38a3a;
+}
+
+#triade-conteudo .titulo-triade {
+    padding-top: 10%;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 20pt;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+#triade-conteudo .texto-triade {
+    color: white;
+    font-size: 14pt;
+    font-family: 'Lato';
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 0 100px;
+    max-width: 800px;
+}
+
+#texto-valores1,  #texto-valores2 {
+    text-align: center;
+}
+
+.icone-missao img, .icone-valores img, .icone-visao img {
+    height: 155px;
+}
+
+.content-triade {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#visao {
+    padding-bottom: 100px;
+}
+
+/*PROJETO ELÉTRICO*/
+
+.service-page {
+    display: inline-block;
+    height: auto;
+    margin: 50px 0;
+
+}
+
+.service-page .container {
+    margin-top: 200px;
+    padding: 3% 3%;
+    background-color: #fafafa;
+    border-radius: 40px;
+}
+
+.service-page .title {
+    color: black;
+    margin-top: 50px;
+}
+
+.titulo-paginas-secundarias {
+    font: 14pt 'Lato';
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.texto-paginas-secundarias {
+    font: 12pt 'Lato';
+    text-align: justify;
+}
+
+.texto-paginas-secundarias p {
+    margin-bottom: 20px;
+}
+
+.etapas-servico {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    float: left;
+    margin-top: 10%;
+}
+
+.etapas-servico-2 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    margin-left: 33.33333%;
+    float: left;
+    margin-top: 10%;
+}
+
+.etapas-servico ul li, .etapas-servico-2 ul li  {
+    list-style: none;
+}
+
+
+
+/*CONNECT*/
+
+.connect-page {
+    float: left;
+    display: flex;
+    height: 100%;
+    padding: 0 5%;
+}
+
+.connect3 {
+    float: left;
+    display: flex;
+    height: auto;
+    padding: 0 5%;
+}
+
+.connect2 {
+    height: auto;
+    float: left;
+    display: flex;
+    padding: 0 5%;
+    margin-bottom: 50px;
+}
+
+.connect-page .container {
+    display: flex;
+}
+
+.logo-connect .content {
+    height: unset;
+}
+
+.logo-connect .content p {
+    font: 14pt 'Lato';
+    font-weight: 700;
+}
+
+.logos-realization {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.logo-realization-image {
+    width: 200px;
+    text-align: center;
+}
+
+.logo-connect .content .logos-realization .logo-realization-image img {
+    margin: 0;
+    max-width: 100%;
+}
+
+.connect-description {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.connect-description p {
+    text-align: justify;
+    color: #707070;
+    font: 400 1rem/1.7 'Lato';
+    padding: 20px;
+}
+
+.palestras-video-content {
+    margin-top: 20px;
+}
+
+.palestras-video-content .palestras-button {
+    border-bottom: 5px solid #668eec;
+    border-top: 1px solid #668eec;
+    border-left: 1px solid #668eec;
+    border-right: 1px solid #668eec;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.palestras-video-content .palestras-button:hover {
+    border-bottom: 1px solid #668eec;
+}
+
+.container .palestras {
+    width: 100%;
+}
+
+
+.video-palestra {
+    display: none;
+    margin: 80px auto;
+    width: 640px; 
+    height: 480px;
+}
+
+
+.connect2 header .title, .connect3 header .title {
+    color: #C8191E;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.connect2 .container .palestras ul{
+    padding: 0 100px;
+}
+/*
+.connect2 .container .palestras ul li:nth-child(3){
+    flex-direction: row-reverse;
+}*/
+
+
+.connect3 .container .palestras ul {
+    justify-content: center;
+    display: flex;
+    padding: 0 100px;
+}
+
+.connect3 .container .palestras ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/*
+.connect2 .container .palestras ul li:nth-child(2) .palestra-text {
+    padding-right: 40px;
+    padding-left: 0;
+}*/
+
+.connect3 .container .palestras ul li .palestra-text {
+    padding: 0;
+}
+
+.connect3 .container .palestras ul li .palestra-text p{
+    margin: 5px 0;
+}
+
+.button-connect {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.palestras-month {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.palestras-button {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 5px solid #32A041;
+    border-top: 1px solid #707070;
+    border-left: 1px solid #707070;
+    border-right: 1px solid #707070;
+    border-radius: 30px;
+    width: 130px;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    color: #707070;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    padding-top: 0;
+    height: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.palestras-button:hover {
+    border-bottom: 1px solid #707070;
+}
+
+.palestras-month li {
+    padding: 0px 30px;
+}
+
+#palestras-julho {
+    display: none;
+}
+
+#palestras-agosto {
+    display: none;
+}
+
+#palestras-setembro {
+    display: none;
+}
+
+#palestras-outubro {
+    display: none;
+}
+
+#palestras-novembro {
+    display: none;
+}
+
+#palestras-dezembro {
+    display: none;
+}
+
+.palestra-active {
+    display: block!important;
+}
+
+.connect3 .container .button-connect .button {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px 10px;
+    margin-right: 10px;
+    margin-left: 0;
+    width: 250px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    color: #707070;
+    box-shadow: 5px 3px 0 0 #C8191E;
+    border: 1px solid #707070;
+    transition: all 0.2s ease 0s;
+}
+
+.connect3 .container .button-connect .button:hover {
+    margin: 2.5px 31.5px;
+    box-shadow: 0 0 0 0 #C8191E;
+}
+
+.notification .infos-area .title-align .title {
+    padding: 0 10%;
+}
+
+.notification .infos-area p {
+    padding: 0 10%;
+}
+
+.button-notification {
+    margin-top: 4%;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 5px solid #32A041;
+    border-top: 1px solid #32A041;
+    border-left: 1px solid #32A041;
+    border-right: 1px solid #32A041;
+    border-radius: 30px;
+    width: 300px;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    color: #707070;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    padding-top: 0;
+    height: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.button-notification:hover {
+    border-bottom: 1px solid #32A041;
+}
+
+/*MENU BAR MOBILE*/
+
+.footer-menu-mobile {
+    display: none;
+    width: 100%;
+    background-color: white;
+    height: 65px;
+    bottom: 0;
+    position: fixed;
+    align-items: center;
+    box-shadow: 0 0 20px -15px black;
+}
+
+.footer-menu-mobile .bar {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+}
+
+.bar .menu-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+}
+
+.bar .menu-option .reuniao img {
+    width: 40px;
+}
+
+.menu-option .ampere-services img {
+    width: 30px;
+}
+
+.bar p {
+    font: 12px 'Lato';
+    color: #707070;
+    text-transform: lowercase;
+}
+
+
+/*BOTÃO VOLTAR O TOPO*/
+
+.top-button {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+}
+
+.top-button-icon img {
+    width: 70px;
+    border-radius: 100%;
+    background-color: white;
+    border-bottom: 5px solid #FFAD82;
+    box-shadow: 0 0 20px -15px black;
+    transition: all 0.3s ease 0s;
+}
+
+.top-button-icon img:hover {
+    border-bottom: none;
+}
+
+
+/*MENSAGEM DE SUCESSO ENVIADO PELO FORMULÁRIO*/
+
+.msg-success {
+    background-color: #5cb85c;
+    padding: 10px;
+    font: 15px 'Lato';
+    color: white;
+    border-radius: 40px;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+@media (max-height: 900px) {
+    section.meeting, section.connect, section.contact, section.info, section.services, section.connect-page {
+        height: 110%;
+    }
+}
+
+@media (max-height: 800px) {
+    section.meeting, section.connect, section.contact, section.info, section.services, section.connect-page {
+        height: 125%;
+    }
+}
+
+@media (max-height: 700px) {
+    section.meeting, section.connect, section.about, section.contact, section.info, section.services, section.connect-page {
+        height: 150%;
+    }
+}
+
+@media (max-height: 600px) {
+    section.meeting, section.connect, section.about, section.contact, section.info, section.services, section.connect-page {
+        height: 175%;
+    }
+}
+
+@media (max-height: 500px) {
+    section.meeting, section.connect, section.about, section.contact, section.info, section.services, main.principal, section.connect-page {
+        height: 200%;
+    }
+}
+
+@media (max-height: 450px) {
+    section.meeting, section.connect, section.about, section.contact, section.info, section.services, main.principal, section.connect-page {
+        height: 220%;
+    }
+
+    /*SERVICES*/
+
+    .estudo, .projeto, .eficiencia {
+        background-size: 86px 86px;
+        width: 86px;
+        height: 86px;
+    }
+
+    .service-circle {
+        width: 168px;
+        height: 168px;
+    }
+}
+
+@media (max-height: 400px) {
+    section.meeting, section.connect, section.about, section.contact, section.info, section.services, main.principal  {
+        height: 280%;
+    }
+
+
+
+}
+
+@media (max-height: 350px) {
+    section.meeting, section.connect, section.about, section.contact, section.info, section.services, main.principal  {
+        height: 320%;
+    }
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+    section.meeting {
+        height: auto;
+    }
+}
+
+@media (max-width: 1300px) {
+    /*NOSSOS SERVIÇOS*/
+
+    .members {
+        margin: 0 20px;
+    }
+
+    .service-circle {
+        margin: 0 90px;
+    }
+
+    /*CONNECT PRINCIPAL*/
+
+    .palestras ul {
+        padding-right: 50px;
+    }
+
+    /*FOOTER*/
+
+    footer .container {
+        margin: 0 5%;
+    }
+
+    .links-footer > ul {
+        padding-right: 0;
+    }
+
+    /*CONNECT PÁGINA*/
+
+    .connect .container {
+        padding: 0 50px;
+    }
+
+    /*.logo-connect img {
+        width: 390px;
+    }*/
+
+    /*SERVIÇOS PÁGINA*/
+
+    .service-page .container {
+        max-width: 1000px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    /*HEADER*/
+
+    header.menu {
+        padding: 30px 5%;
+    }
+
+    ul.menu-options > li > a {
+        padding: 0px 10px;
+    }
+
+    /*SOBRE NÓS*/
+    
+    .members {
+        margin: 0 20px;
+    }
+
+    .image-members {
+        height: 370px;
+    }
+
+    .text-members {
+        font-size: 20px;
+    }
+
+    /*NOSSOS SERVIÇOS*/
+
+    .service-circle {
+        width: 158px;
+        height: 158px;
+        margin: 0 45px
+    }
+
+    .estudo, .eficiencia, .projeto {
+        background-size: 96px 96px;
+        width: 96px;
+        height: 96px;
+    }
+
+    .service-title {
+        font-size: 18px;
+    }
+
+    /*CONTATO*/
+
+    .contact-area {
+        align-items: center;
+    }
+
+    .form {
+        width: 70%;
+    }
+
+    .infos-area p {
+        font-family: 'Lato';
+        padding: 0px 50px;
+    }
+
+    /*CONNECT PRINCIPAL*/
+
+    .palestra-icon img {
+        width: 150px;
+    }
+
+    .logo-connect img {
+        width: 410px;
+    }
+
+    /*FOOTER*/
+
+    .links-footer {
+        padding: 10px 0px;
+    }
+
+    /*PROCESSO SELETIVO PÁGINA*/
+
+    .processo-seletivo .container {
+        flex-direction: column;
+    }
+
+    #texto-paginas-secundarias {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    /*CONNECT-PAGE*/
+
+    .logo-connect .content .logos-realization img {
+        width: 150px;
+        margin: 0;
+        height: auto;
+    }
+
+    /*SERVIÇOS PÁGINA*/
+
+    .service-page .container {
+        max-width: 900px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    /*HEADER*/
+
+    ul.menu-options > li > a {
+        padding: 0px 5px;
+    }
+
+    ul.menu-options > li > a {
+        font-size: 16px;
+    }
+
+    .logo img {
+        height: 43px;
+    }
+
+    .connect-icon img {
+        width: 25px;
+    }
+    
+    .reuniao img {
+        width: 50px;
+    }
+
+    /*SOBRE NÓS*/
+
+    .image-members {
+        height: 300px;
+    }
+
+    .text-members {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    /*CONNECT*/
+
+    .connect, .connect2, .connect3 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .connect header .title {
+        padding-top: 0;
+    }
+
+    .logo-connect {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .palestras {
+        width: 100%;
+    }
+
+    .palestras ul {
+        padding: 0 100px;
+        margin: 50px 0;
+    }
+
+    .connect header .title {
+        text-align: center;
+    }
+
+
+    /*FOOTER*/
+
+    #logo {
+        width: 100%;
+    }
+
+    footer {
+        height: 620px;
+    }
+
+    footer p {
+        margin-top: 4%;
+        margin-bottom: 4%;
+        padding: 0 20%;
+    }
+
+    #secao-footer {
+        justify-content: space-evenly;
+    }
+
+    /*CONNECT PAGE*/
+
+    .connect-page {
+        height: 100%;
+    }
+
+    .connect-page .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+    }
+
+    .connect-description {
+        width: 100%;
+    }
+
+    .connect2 .container .palestras ul li, .connect2 .container .palestras ul li:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .connect2 .container .palestras ul li .palestra-text, .connect2 .container .palestras ul li:nth-child(2) .palestra-text {
+        padding: 0;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .connect2 .container .palestras ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connect2 .container .palestras ul, .connect3 .container .palestras ul {
+        padding: 0;
+    }
+
+    /*PÁGINA SOBRE NÓS*/
+
+    #triade-conteudo .container {
+        padding-top: 7%;
+    }
+
+    /*SERVIÇOS PÁGINA*/
+
+    .service-page .container {
+        max-width: 720px;
+        padding: 5% 5%;
+    }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+    .title {
+        font-size: 30px;
+    }
+
+    /*PRINCIPAL BANNER*/
+
+    .principal-text {
+        padding: 0px 10px 10px 30px;
+    }
+
+    /*CONTATO*/
+
+    section.contact {
+        width: 100%;
+    }
+
+    .infos {
+        display: none!important;
+    }
+
+    /*PÁGINA PROCESSO SELETIVO*/
+
+    .icone-seletivo {
+        height: 150px;
+        width: 150px;
+        margin-top: 40px;
+    }
+
+    #texto-paginas-secundarias {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    section.connect-page {
+        height: auto;
+    }
+
+    .connect2 {
+        margin-top: 10%;
+    }
+
+    .connect2 header .title, .connect3 header .title {
+        margin-bottom: 0;
+    }
+
+    .palestras-month-content ul {
+        margin-bottom: 0;
+    }
+
+    /*CONNECT-PAGE*/
+
+    .logo-connect .content .logos-realization img {
+        width: 150px;
+        margin: 0;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape), (max-width: 900px) and (orientation: landscape)  {
+    /*PRINCIPAL BANNER*/
+
+    .principal-container {
+        top: 15%;
+    }
+
+    /*SOBRE*/
+
+    .about {
+        height: auto;
+    }
+
+    .about .container {
+        margin: 15% 0;
+    }
+
+    .about .title-align {
+        top: 4%;
+    }
+
+    /*MEETING*/
+
+    .meeting {
+        height: auto;
+    }
+
+    /*CONTACT*/
+
+    section.contact {
+        height: auto!important;
+    }
+
+    .contact-area .title-align {
+        margin-top: 10%;
+    }
+
+    .contact-area form {
+        margin-top: 5%;
+    }
+
+    /*PÁGINA SOBRE NÓS*/
+
+    #triade-conteudo .container {
+        padding-top: 15%;
+    }
+
+    /*PÁGINA PROCESSO SELETIVO*/
+
+    .processo-seletivo {
+        height: auto;
+    }
+
+    .button-seletivo {
+        margin-bottom: 20px;
+    }
+
+    .processo-seletivo .title-align {
+        top: 22%;
+    }
+
+    .processo-seletivo .title-align .title {
+        font-size: 21px;
+    }
+
+    .processo-seletivo .container {
+        padding-top: 15%;
+    }
+
+    .icone-seletivo {
+        height: 125px;
+        width: 125px;
+        margin-top: 40px;
+    }
+
+    .icone-seletivo img {
+        height: 75px;
+    }
+
+    #texto-paginas-secundarias {
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    #texto-paginas-secundarias {
+        font: 12pt 'Lato';
+    }
+
+    .connect-description p {
+        font-size: 16px;
+    }
+
+    .palestra-text p {
+        font: 16px 'Lato';
+        font-weight: 700;
+    }
+
+    /*PÁGINA SERVIÇOS*/
+
+    .service-page .container {
+        margin-top: 15%;
+    }
+
+    .etapas-servico ul li p, .etapas-servico-2 ul li p {
+        font-size: 15px!important;
+    }
+
+}
+
+@media (max-width: 768px){
+    .top-button {
+        display: none!important;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 7%;
+    }
+
+    .burger>div {
+        width: 20px;
+        height: 2px;
+        margin: 5px;
+        background-color: #707070;
+        transition: all 0.3s;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .connect-icon-content {
+        display: none;
+    }
+
+    .meeting-icon-content {
+        display: none;
+    }
+
+    header.menu {
+        justify-content: center;
+    }
+    
+    .toggle .line1 {
+        transform: rotate(45deg) translate(5px,5px);
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(-45deg) translate(5px,-5px);
+    }
+    
+    .nav-active {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        background-color: white;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+        border-radius: 0px 0px 40px 40px;
+        box-shadow: 0 4px 6px -6px black;
+        height: auto;
+        transform: translateY(35px);
+        z-index: -1;
+        transition: transform 0.5s ease-in;
+    }
+
+
+    .footer-menu-mobile {
+        display: flex;
+    }
+
+    header.menu {
+        height: 55px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    /*SOBRE NÓS*/
+
+    .members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    /*NOSSOS SERVIÇOS*/
+
+    .service-circle {
+        width: 148px;
+        height: 148px;
+        margin: 0 25px;
+    }
+
+    .service-title {
+        padding: 20px 0 0 0;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-family: 'Lato';
+    }
+
+    .estudo, .eficiencia, .projeto {
+        background-size: 86px 86px;
+        width: 86px;
+        height: 86px;
+    }
+
+    /*REUNIÃO*/
+
+    .form {
+        width: 70%;
+    }
+
+    .form .button {
+        left: 10%;
+    }
+
+    /*CONTATO*/
+
+    section.contact {
+        min-height: 100%;
+        min-width: 100%;
+        height: 100vh;
+    }
+
+    section.infos {
+        display: none;
+    }
+
+    section.notification {
+        display: flex!important;
+        width: 100%;
+        height: auto;
+        padding: 10% 0 10% 0;
+    }
+
+    /*CONNECT PRINCIPAL*/
+
+    .palestra-text p {
+        font: 16px 'Lato';
+        font-weight: 700;
+    }
+
+    .connect-description p {
+        font-size: 16px;
+    }
+
+    /*FOOTER*/
+
+    footer {
+        display: inline-block;
+        margin-bottom: 65px;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50px;
+    }
+
+    .text-1 {
+        left: unset;
+        top: 10%;
+    }
+
+    .text-2 {
+        right: unset;
+        top: 50%;
+    }
+
+    footer .container {
+        margin: 0;
+    }
+
+
+    /*PÁGINA SERVIÇOS*/
+
+    .etapas-servico, .etapas-servico-2 {
+        max-width: unset;
+        margin-left: 0; 
+    }
+
+    .service-page .container {
+        max-width: 580px;
+    }
+
+    /*CONNECT PAGE*/
+
+    .video-palestra {
+        display: none;
+        margin: 80px auto;
+        width: 520px;
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 630px) {
+    /*NOSSOS SERVIÇOS*/
+    
+    .service-circle {
+        width: 148px;
+        height: 148px;
+        margin: 0 20px;
+    }
+
+    /*CONNECT PRINCIPAL*/
+
+    .palestra-icon img {
+        width: 120px;
+    }
+
+    .palestras ul {
+        padding: 0 20px;
+    }
+
+    /*PÁGINA SERVIÇOS*/
+
+    .service-page .container {
+        max-width: 520px;
+    }
+
+    .titulo-paginas-secundarias {
+        font: 17px 'Lato';
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    /*.container {
+        margin-top: 50%;
+    }*/
+
+    section.meeting {
+        height: auto;
+    }
+
+    .title-align {
+        top: 8%;
+    }
+
+    .form {
+        margin-top: 30%;
+    }
+
+    /*PRINCIPAL*/
+   
+    .principal-container {
+        width: 350px;
+        top: 15%;
+        left: 7%;
+    }
+
+    .principal-text {
+        font-size: 16px;
+    }
+
+    /*SOBRE NÓS*/
+
+    .image-members {
+        height: 250px;
+    }
+
+    .text-members {
+        width: 90%;
+        margin-top: 0px;
+    }
+
+    .text-members p {
+        margin-top: 50px;
+    }
+
+    .about {
+        height: auto;
+    }
+    
+    .about .container {
+        margin-top: 35%;
+        margin-bottom: 15%;
+    }
+
+    .about .container .members .text-members .button {
+        margin-left: 0px;
+    }
+
+    /*NOSSOS SERVIÇOS*/
+
+    .center {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .service-title {
+        margin-bottom: 3%;
+        padding: 3% 0 0 0;
+    }
+
+
+    /*REUNIÃO*/
+
+    section.meeting {
+        margin-bottom: 15%;
+    }
+
+
+    /*Contato*/
+
+    .contact-area form {
+        margin-top: 18%;
+    }
+
+    /*CONNECT PRINCIPAL*/
+
+    .logo-connect img {
+        width: 350px;
+    }
+
+    /*FOOTER*/
+
+    .links-footer {
+        width: 100%;
+    }
+
+    .center-links-footer {
+        align-items: center;
+    }
+
+    footer {
+        height: 700px;
+    }
+
+    .links-footer > ul {
+        text-align: center;
+    }
+
+    /*PÁGINA SOBRE NÓS*/
+
+    #triade-conteudo .container {
+        margin-top: 0;
+        padding-top: 18%;
+    }
+
+    /*PROCESSO SELETIVO PÁGINA*/
+
+    .processo-seletivo {
+        height: auto;
+    }
+
+    .icone-seletivo {
+        height: 150px;
+        width: 150px;
+        margin-top: 125px;
+    }
+
+    .button-seletivo {
+        margin-bottom: 20px;
+    }
+
+    .icone-seletivo img {
+        height: 100px;
+    }
+
+    #texto-paginas-secundarias {
+        font: 15pt 'Lato';
+    }
+
+    /*PÁGINA CONNECT*/
+
+    .connect3 .container {
+        margin-top: unset;
+    }
+
+    .connect2 .container .palestras ul li, .connect2 .container .palestras ul li:nth-child(2) {
+        width: unset;
+    }
+
+    .video-palestra {
+        display: none;
+        margin: 80px auto;
+        width: 320px;
+        height: 240PX;
+    }
+
+    .logo-connect .content p {
+        padding-left: 40px;
+    }
+
+    /*SERVIÇOS PÁGINA*/
+
+    .service-page .container {
+        max-width: 420px;
+    }
+
+    .titulo-paginas-secundarias {
+        font: 16px 'Lato';
+    }
+
+}
+
+
+@media (max-width: 450px) {
+    /*SERVIÇOS PÁGINA*/
+
+
+    .service-page .container {
+        max-width: 360px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .container {
+        margin-top: 50%;
+    }
+
+    .title-align {
+        top: 3%;
+    }
+
+    /*HEADER*/
+
+    ul.menu-options > li > a {
+        font-size: 14px;
+    }
+
+    /*PRINCIPAL*/
+   
+    .principal-container {
+        left: 0;
+    }
+
+    .principal-text {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    /*SOBRE NÓS*/
+
+    .text-members {
+        font-size: 17px;
+
+    }
+
+    .about {
+        height: auto;
+    }
+
+    .about .container {
+        margin-top: 29%;
+    }
+
+    /*SERVICES*/
+
+    .estudo, .eficiencia, .projeto {
+        background-size: 66px 66px;
+        width: 66px;
+        height: 66px;
+    }
+
+    .service-circle {
+        width: 128px;
+        height: 128px;
+        margin: 0 20px;
+    }
+
+    .service-title {
+        margin-bottom: 5%;
+        padding: 5% 0 0 0;
+    }
+
+    .services {
+        min-height: 100%;
+        min-width: 100%;
+        height: 100vh;
+    }
+
+    /*REUNIÃO*/
+    .meeting .form {
+        margin-top: 23%;
+    }
+
+    .hour-form select:focus + .label-hour .content-hour, .hour-form select:valid + .label-hour .content-hour {
+        font-size: 13px;
+    }
+
+    .find-form select:focus + .label-find .content-find, .find-form select:valid + .label-find .content-find {
+        font-size: 13px;
+    }
+
+    /*CONTATO*/
+
+    .contact .form {
+        margin-top: 10%;
+    }
+
+    /*CONNECT PRINCIPAL*/
+
+    .logo-connect img {
+        width: 300px;
+    }
+
+    .palestra-text p {
+        font: 16px 'Lato';
+        font-weight: bold;
+    }
+
+    /*FOOTER*/
+
+    .text-1, .text-2 {
+        font: 10pt "Lato";
+    }
+
+    /*PÁGINA CONNECT*/
+
+    .logos-realization {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-connect .content .logos-realization img {
+        margin-top: 20px;
+    }
+
+    .connect-page {
+        height: auto;
+    }
+
+    .connect2 {
+        margin-bottom: 0;
+    }
+
+    .connect2 .container {
+        margin-top: 10%;
+    }
+
+    .palestras ul {
+        margin-bottom: 0;
+    }
+
+    .connect2 header .title, .connect3 header .title {
+        margin-bottom: 0;
+    }
+
+    .connect-description p {
+        font-size: 16px;
+    }
+
+    /*PÁGINA PROCESSO SELETIVO*/
+
+    .processo-seletivo .title-align {
+        top: 11%;
+    }
+
+    .processo-seletivo .container {
+        margin-top: 0;
+    }
+
+    .icone-seletivo {
+        height: 125px;
+        width: 125px;
+    }
+
+    .icone-seletivo img {
+        height: 75px;
+    }
+
+    #texto-paginas-secundarias {
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    #texto-paginas-secundarias {
+        font: 12pt 'Lato';
+    }
+
+    .button-seletivo {
+        width: 240px;
+        font-size: 13px;
+    }
+
+    /*SERVIÇOS PÁGINA*/
+
+    .service-page .container {
+        max-width: 300px;
+        margin-top: 30%;
+    }
+
+    .service-page .title-align {
+        top: 7%;
+    }
+}
+
+
+
+/*PÁGINA SOBRE NÓS*/
+
+
+
+@media (max-width: 1200px) {
+    #triade-conteudo .container {
+            max-width: 800px;
+    }
+
+    .content-triade #texto-valores1, .content-triade #texto-valores2 {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    #triade-conteudo .container {
+        max-width: 600px;
+    }
+
+    #triade-conteudo #missao .texto-triade, #triade-conteudo #visao .texto-triade {
+        padding: 0 50px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #valores .content-triade {
+        flex-direction: column;
+    }
+
+    #triade-conteudo .container {
+        max-width: 500px;
+    }
+
+    #triade-conteudo #missao .texto-triade, #triade-conteudo #visao .texto-triade {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    #missao .content-triade {
+        flex-direction: column;
+    }
+
+    #visao .content-triade {
+        flex-direction: column-reverse;
+    }
+
+    .icone-missao {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 484px){
+
+}
+
+
+
+@media (max-height: 484px){
+
+}
